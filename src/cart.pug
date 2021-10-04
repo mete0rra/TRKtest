@@ -1,0 +1,52 @@
+html(lang='en')
+    //-include head.pug
+    include head
+    body
+        //-include header
+        include header
+        .content
+            .content__container
+                .shopping__cart
+                    .shopping__cart__header
+                        .shopping__cart__header__heading Shopping Cart
+                    .shopping__cart__content
+                        .shopping__cart__content__header
+                            .shopping__cart__content__header__left
+                                .shopping__cart__content__header__left__item Remove
+                                .shopping__cart__content__header__left__item Image
+                                .shopping__cart__content__header__left__item Product(s)
+                            .shopping__cart__content__header__right
+                                .shopping__cart__content__header__right__item Price
+                                .shopping__cart__content__header__right__item Qty.
+                                .shopping__cart__content__header__right__item Total
+                        .shopping__cart__content__item
+                            .shopping__cart__content__item__left
+                                input.shopping__cart__content__item__left__checkbox(type="checkbox")
+                                .shopping__cart__content__item__left__imgbox
+                                    img.shopping__cart__content__item__left__imgbox__img(src="images/autumn-baldeneysee-essen.jpeg")
+                                .shopping__cart__content__item__left__desc Google Analytics
+                            .shopping__cart__content__item__right
+                                .shopping__cart__content__item__right__price $25.00
+                                input.shopping__cart__content__item__right__qty(type="number", min="1")
+                                .shopping__cart__content__item__right__total $25.00
+                        .shopping__cart__content__buttons
+                            button.shopping__cart__content__buttons__update Update cart
+                            button.shopping__cart__content__buttons__continue Continue shopping
+                    .shopping__cart__summary
+                        .shopping__cart__summary__subtotal
+                            .shopping__cart__summary__subtotal__text Sub-Total:
+                            .shopping__cart__summary__subtotal__price $25.00
+                        .shopping__cart__summary__shipping
+                            .shopping__cart__summary__shipping__text Shipping:
+                            .shopping__cart__summary__shipping__price $25.00
+                        .shopping__cart__summary__tax
+                            .shopping__cart__summary__tax__text Tax:
+                            .shopping__cart__summary__tax__price $0.00
+                        .shopping__cart__summary__total
+                            .shopping__cart__summary__total__text Total:
+                            .shopping__cart__summary__total__price $25.00
+                        .shopping__cart__summary__terms
+                            input(type="checkbox", id="terms")
+                            .shopping__cart__summary__terms__label(for="terms") I Agree. <a class="shopping__cart__summary__terms__label__link" href="#">Our Terms of Service</a> and Privacy Notice are linked here for your review.
+                        button.shopping__cart__summary__checkout Checkout
+        include footer

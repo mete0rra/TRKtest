@@ -1,0 +1,101 @@
+html(lang='en')
+    //-include head.pug
+    include head
+    body
+        //-include header
+        include header
+        .content
+            .content__container
+                nav.categories
+                    .categories__header
+                        .categories__header__heading Categories
+                    .categories__items
+                        .categories__items__item
+                            a.categories__items__item__link(href="#") Category 1
+                    .categories__items
+                        .categories__items__item
+                            a.categories__items__item__link(href="#") Category 2
+                    .categories__items
+                        .categories__items__item
+                            a.categories__items__item__link(href="#") Category 3
+                    .categories__items
+                        .categories__items__item
+                            a.categories__items__item__link(href="#") Category 4
+                    .categories__items
+                        .categories__items__item
+                            a.categories__items__item__link(href="#") Category 5
+                section.catalog
+                    .catalog__header
+                        .catalog__header__heading Title
+                    nav.catalog__sortview
+                        .catalog__sortview__sort
+                            .catalog___sortview__sort__sort
+                                .catalog__sortview__sort__sort__text Sort by:
+                                    select.catalog__sortview__sort__sort__select
+                                        option.catalog__sortview__sort__sort__select__option Position
+                                        option.catalog__sortview__sort__sort__select__option Price
+                            .catalog__sortview__sort__display
+                                .catalog___sortview__sort___display__text Display
+                                    select.catalog__sortview__sort__display__select
+                                        option.catalog__sortview__sort__display__select 6 per page
+                                        option.catalog__sortview__sort__display__select 9 per page
+                        .catalog__sortview__displaytype
+                            .catalog__sortview__displaytype__table
+                                .catalog__sortview__displaytype__table__row
+                                    .catalog__sortview__displaytype__table__row__item
+                                    .catalog__sortview__displaytype__table__row__item2
+                                .catalog__sortview__displaytype__table__row
+                                    .catalog__sortview__displaytype__table__row__item
+                                    .catalog__sortview__displaytype__table__row__item2
+                                .catalog__sortview__displaytype__table__row
+                                    .catalog__sortview__displaytype__table__row__item
+                                    .catalog__sortview__displaytype__table__row__item2
+                            .catalog__sortview__displaytype__items
+                                .catalog__sortview__displaytype__items__row
+                                    .catalog__sortview__displaytype__items__row__item(class="active")
+                                    .catalog__sortview__displaytype__items__row__item2(class="active")
+                                    .catalog__sortview__displaytype__items__row__item3(class="active")
+                                .catalog__sortview__displaytype__items__row
+                                    .catalog__sortview__displaytype__items__row__item(class="active")
+                                    .catalog__sortview__displaytype__items__row__item2(class="active")
+                                    .catalog__sortview__displaytype__items__row__item3(class="active")
+                    .catalog__items
+                        .catalog__items__item
+                            a.catalog__items__item__link(href="#")
+                                img.catalog__items__item__link__img(src="images/autumn-baldeneysee-essen.jpeg")
+                                .catalog__items__item__link__heading Customer Demo
+                                .catalog__items__item__link__text $120.00
+                                button.catalog__items__item__link__btn Add to Cart
+                        .catalog__items__item
+                            a.catalog__items__item__link(href="#")
+                                img.catalog__items__item__link__img(src="images/autumn-baldeneysee-essen.jpeg")
+                                .catalog__items__item__link__heading Customer Demo
+                                .catalog__items__item__link__text $120.00
+                                button.catalog__items__item__link__btn Add to Cart
+                        .catalog__items__item
+                            a.catalog__items__item__link(href="#")
+                                img.catalog__items__item__link__img(src="images/autumn-baldeneysee-essen.jpeg")
+                                .catalog__items__item__link__heading Customer Demo
+                                .catalog__items__item__link__text $120.00
+                                button.catalog__items__item__link__btn Add to Cart
+                        .catalog__items__item
+                            a.catalog__items__item__link(href="#")
+                                img.catalog__items__item__link__img(src="images/autumn-baldeneysee-essen.jpeg")
+                                .catalog__items__item__link__heading Customer Demo
+                                .catalog__items__item__link__text $120.00
+                                button.catalog__items__item__link__btn Add to Cart
+                        .catalog__items__item
+                            a.catalog__items__item__link(href="#")
+                                img.catalog__items__item__link__img(src="images/autumn-baldeneysee-essen.jpeg")
+                                .catalog__items__item__link__heading Customer Demo
+                                .catalog__items__item__link__text $120.00
+                                button.catalog__items__item__link__btn Add to Cart
+                        .catalog__items__item
+                            a.catalog__items__item__link(href="#")
+                                img.catalog__items__item__link__img(src="images/autumn-baldeneysee-essen.jpeg")
+                                .catalog__items__item__link__heading Customer Demo
+                                .catalog__items__item__link__text $120.00
+                                button.catalog__items__item__link__btn Add to Cart
+                    .catalog__loadmore
+                     button.catalog__loadmore__btn Load more
+        include footer
